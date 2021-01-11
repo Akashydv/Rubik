@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5{
             margin-right: 2vw;
         }
         .navbar-nav{
-            
             .active{ background-color: #cd2122 !important;}
             .nav-item{
                 margin: 0vw 0.3vw;
@@ -87,7 +86,7 @@ h1, h2, h3, h4, h5{
                         background-color: rgba(255,255,255,0.49);
                         height: 1px;
                         width:17px;
-                        bottom:54px;
+                        bottom:50px;
                     }
                 }
             }
@@ -208,8 +207,8 @@ h1, h2, h3, h4, h5{
                     font-weight: 300;
                     list-style: none;
                     background: url(../images/icons8-checked.gif) left no-repeat;
-                    background-size: 6%;
-                    padding-left: 1vw;
+                    background-size: 8%;
+                    padding-left: 1.4vw;
                 }
             }
         }
@@ -439,30 +438,45 @@ h1, h2, h3, h4, h5{
 
 @media only screen and (max-width: 575.98px){
     h1{ font-size: 20px !important;}
+    h3{ font-size: 16px !important;}
     h4{ font-size: 13px !important;}
     h5{ font-size: 12px !important;}
     p{ font-size: 11px !important;}
-    .banner{ height:53vw;
-        #banner_video{ top: 0 !important;}
-        .banner-text{ top:5vw;
-            h1{ margin-bottom: 0px;}
-            h1::after{ width: 71%; height: 26px; left: 40px; border-left: solid 6px white; border-right: solid 6px white;}
-            h4::after{ top:9px; border-left: solid 6px black; border-right: solid 6px black;}
-            h4{ font-size: 13px; margin-top: 11px;}
-        }
+    .banner{ height:83vw;
+        img{ height: 83vw}
     }
-    .text{ margin-bottom: 20px;
-        .text-div{
-            padding: 0 4vw 5vw !important;
-            h4{ font-size: 13px; padding: 0; padding-top: 30px;}
+    .header{ background: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.25), rgba(0,0,0,0.16));
+        .header-top{ padding:0px 0px 5px;
+            .social-icons{ width: 30%;
+                i{ font-size: 11px; margin: 0vw 1.5vw;}
+            }
+            .header-top-content{ width: 70%;
+                a{ font-size: 11px; text-transform: capitalize;}
+            }
         }
-        a{ font-size: 11px; padding: 5px 10px;}
-        #div-arrow{ left: 35%; margin-bottom: -55px;}
+        .navbar{
+            .navbar-toggler{ padding: .42rem .75rem; font-size: 0.8rem;}
+            img{ width: 45px; height: 45px;}
+            .navbar-nav{ background-color: rgba(0,0,0, 0.7); width: 100%;
+                .active{ background-color: #cd2122 !important;}
+                .nav-item{ text-align: center; transition: all ease-in-out 0.7s;
+                    &:hover{ background-color: #cd2122;}
+                    .nav-link{ font-size: 11px;
+                        &:before{display: none}
+                    }
+                }
+            }
+        }
     }
     .about-section{
-        .about-blocks-image, .about-blocks-head{ width:100% !important; text-align: left;}
-        p{ width: 100% !important; padding: 0px 10px; line-height: 19px !important;}
-        h4{ line-height: 15px !important;}
+        .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4); width: 50%}
+        .row{ padding: 4vw 7vw 2vw;}
+        .about-blocks-image, .about-blocks-head{ width:100% !important; text-align: left !important;}
+        img{ width:50px !important; height: 50px !important; margin-bottom: 3vw;}
+        h1{ padding-bottom: 0px; text-align: center;}
+        h3{ font-size: 300; text-align: center;}
+        h4{ line-height: 15px !important; font-weight: 500 !important;}
+        li{ background-size: 7% !important; padding-left: 5vw !important; font-size: 11px !important; line-height: 20px !important; font-weight: 400;}
     }
     .testimonial{
         .testimonial-block:nth-child(1), .testimonial-block:nth-child(2){ padding-top: 20px; padding-bottom: 20px;}
