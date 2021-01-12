@@ -1,3 +1,5 @@
+/* Body */
+
 *{
     padding:0;
     margin:0;
@@ -25,7 +27,7 @@ h1, h2, h3, h4, h5{
         width: 8% !important;
     }
     img{
-        height:43vw;
+        height:47.1vw;
     }
 }
 .header{
@@ -66,7 +68,7 @@ h1, h2, h3, h4, h5{
         img{
             width:110px;
             height: 110px;
-            margin-right: 2vw;
+            margin-right: 4vw;
         }
         .navbar-nav{
             .active{ background-color: #cd2122 !important;}
@@ -79,7 +81,7 @@ h1, h2, h3, h4, h5{
                 .nav-link{
                     color: white !important;
                     font-size: 14px;
-                    font-weight: 400;
+                    font-weight: 640;
                     &:before{
                         content: "";
                         position: absolute;
@@ -94,8 +96,10 @@ h1, h2, h3, h4, h5{
     }
 }
 
+
+/* Centre Text */
 .text{
-    margin-top: -3vw;
+    margin-top: 2vw;
     .text-div{
         position: relative;
         background-color: #cd2122;
@@ -111,7 +115,7 @@ h1, h2, h3, h4, h5{
             transform: skewY(2deg);
             width: 100%;
             transform-origin: right bottom;
-            height:34%;
+            height:35.2%;
             left:0;
             z-index: -1000;
             border-radius: 15px;
@@ -120,8 +124,8 @@ h1, h2, h3, h4, h5{
         h4{
             text-transform: uppercase;
             color: white;
-            padding-top: 5vw;
-            padding-right: 4vw;
+            padding-top: 3vw;
+            padding-right: 2vw;
             font-weight: 300;
             font-size: 21px;
         }
@@ -164,18 +168,20 @@ h1, h2, h3, h4, h5{
         }
     }
 } 
+
+/* Features Section */
 .about-section{
     text-align: start;
-    padding: 7vw 0vw;
+    padding: 7vw 0vw 5vw 0vw;
     h1{
-        color: #b3b6b7;
+        color: #1e376f;
         text-transform: uppercase;
         font-weight: 900;
         font-size: 38px;
         padding-bottom: 2vw;
     }
     .about-blocks{
-        padding-top: 6vw;
+        padding-top: 3vw;
         .about-blocks-image{
             display: inline-block;
             float: left;
@@ -193,7 +199,7 @@ h1, h2, h3, h4, h5{
                 font-size: 21px;
                 color:#424949;
                 line-height: 31px;
-                font-weight: 300;
+                font-weight: 400;
                 text-transform: capitalize;
                 text-align: left;
             }
@@ -201,10 +207,10 @@ h1, h2, h3, h4, h5{
                 padding: 0px;
                 list-style-position: inside;
                 li{
-                    font-size: 15px;
+                    font-size: 14.5px;
                     line-height: 28px;
-                    color: #6d6c6c;
-                    font-weight: 300;
+                    color: #262626;
+                    font-weight: 400;
                     list-style: none;
                     background: url(../images/icons8-checked.gif) left no-repeat;
                     background-size: 8%;
@@ -215,6 +221,111 @@ h1, h2, h3, h4, h5{
     }
 } 
 
+
+/* Rummy Slider */
+.fastest-rummy{
+    background-color: rgba(0,0,0,0.07);
+    padding-bottom: 90px;
+    h1{
+        text-align: center;
+        font-size: 30px;
+        padding: 70px 0px 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:#1e376f;
+
+        &::after{
+            content:"";
+            position: absolute;
+            display: block;
+            width: 6vw;
+            height: 3px;
+            margin-top: 18px;
+            margin-left: 40%;
+            background-color: #cd2122;        
+        }
+    }
+    .row{
+        margin-top: 4vw;
+        .fastest-rummy-left{
+            h4{
+                color:#424949;
+                padding-bottom:20px;
+                font-size: 23px;
+                word-spacing: 5px;
+
+                &::after{
+                    content:"";
+                    position: absolute;
+                    display: block;
+                    width: 4vw;
+                    height: 2px;
+                    margin-top: 7px;
+                    background-color: #cd2122;
+                }
+            }
+            p{
+                padding-bottom: 30px;
+            }
+            a{
+                padding: 9px 15px;
+                background-color: #cd2122;
+                color: white;
+                text-decoration: none;
+                font-size: 13px;
+                text-transform: uppercase;
+                font-weight: 600;
+                border-radius: 4px;
+            }
+        }
+        .fastest-rummy-right{
+            img{
+                width: 100%;
+                height: 230px;
+                padding: 0px 10px;
+            }
+            .rc-rcbrand-ul {
+                position:relative;
+                width:99999px;
+                list-style-type:none;   
+                text-align:center;  
+                overflow: hidden;
+            }
+            
+            .rc-rcbrand-inner {
+                position: relative;
+                overflow: hidden;
+                width:100%;
+            }
+            .rc-rcbrand-item {
+                float:left;
+                position:relative;
+            }
+            .rc-rcbrand-nav-left, .rc-rcbrand-nav-right {
+                padding:5px 10px;
+                position: absolute;
+                cursor: pointer;
+                z-index: 4;
+                top: 92%;
+                transform: translateY(-50%);   
+                background: rgb(255, 102, 0, 0.3);
+                color: #fff;     
+            }
+            .rc-rcbrand-nav-left:before {
+                content: "<"
+            }            
+            .rc-rcbrand-nav-right {
+                right: 94%;    
+            }
+            .rc-rcbrand-nav-right:before {
+                content: ">"
+            }
+        }
+    }
+}
+
+
+/* Reviews */
 .testimonial{
     background-color: #071b31;
     color: white;
@@ -222,12 +333,14 @@ h1, h2, h3, h4, h5{
     z-index: 10000;
     h1{
         text-align: center;
-        padding-top: 7vw;
-        font-size: 35px;
-        font-weight: 300;
+        padding-top: 5vw;
+        font-size: 30px;
+        font-weight: 700;
+		text-transform: uppercase;
     }
     .row{
         border-bottom: 2px solid rgba(255,255,255,0.13);
+		padding-bottom: 3rem!important;
     }
     hr{
         width:9%;
@@ -287,6 +400,8 @@ h1, h2, h3, h4, h5{
     }
     
 }
+
+/* Security */
 .payment{
     .payment-options{
         padding: 78px 0px 70px;
@@ -332,6 +447,7 @@ h1, h2, h3, h4, h5{
 }
 
 
+/* Footer */
 .footer{
     background: linear-gradient(to right, rgba(0,0,0,0.92), rgba(0,0,0,0.88), rgba(0,0,0,0.9), #000000);
     padding: 20px 0px 10px;
@@ -437,11 +553,11 @@ h1, h2, h3, h4, h5{
 
 
 @media only screen and (max-width: 575.98px){
-    h1{ font-size: 20px !important;}
-    h3{ font-size: 16px !important;}
-    h4{ font-size: 13px !important;}
-    h5{ font-size: 12px !important;}
-    p{ font-size: 11px !important;}
+    h1{ font-size: 22px !important;}
+    h3{ font-size: 18px !important;}
+    h4{ font-size: 17px !important;}
+    h5{ font-size: 14px !important;}
+    p{ font-size: 12px !important;}
     .banner{ height:83vw;
         img{ height: 83vw}
     }
@@ -469,14 +585,23 @@ h1, h2, h3, h4, h5{
         }
     }
     .about-section{
-        .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4); width: 50%}
+        .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4)}
         .row{ padding: 4vw 7vw 2vw;}
         .about-blocks-image, .about-blocks-head{ width:100% !important; text-align: left !important;}
         img{ width:50px !important; height: 50px !important; margin-bottom: 3vw;}
         h1{ padding-bottom: 0px; text-align: center;}
         h3{ font-size: 300; text-align: center;}
         h4{ line-height: 15px !important; font-weight: 500 !important;}
-        li{ background-size: 7% !important; padding-left: 5vw !important; font-size: 11px !important; line-height: 20px !important; font-weight: 400;}
+        li{ background-size: 6% !important; padding-left: 8vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
+    }
+    .fastest-rummy{
+        h1{ padding: 40px 0px 30px;
+            &:after{ width: 30%; margin-top: 10px; margin-left: 32%;}
+        }
+        .fastest-rummy-right{ 
+            .rc-rcbrand-item{ width: 325px !important}
+            .rc-rcbrand-nav-left, .rc-rcbrand-nav-right { display: none;}
+        }
     }
     .testimonial{
         .testimonial-block:nth-child(1), .testimonial-block:nth-child(2){ padding-top: 20px; padding-bottom: 20px;}
@@ -525,4 +650,11 @@ h1, h2, h3, h4, h5{
             i{ font-size: 13px;}
         }
     }   
+}
+@media only screen  and (min-width : 1224px){
+    .fastest-rummy{
+        .fastest-rummy-right{
+            .rc-rcbrand-item{ width: 298px !important;}
+        }
+    }
 }
