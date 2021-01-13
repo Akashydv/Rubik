@@ -331,11 +331,12 @@ h1, h2, h3, h4, h5{
     padding: 100px 0px;
     .rummy-game-left{
         height: auto;
-        img:nth-child(1){
+        img{
             position: relative;
             width: 117%;
             height: auto;
             left: -30%;
+            filter: drop-shadow(0px 0px 3px black);
         }
     }
     .rummy-game-right{
@@ -392,6 +393,62 @@ h1, h2, h3, h4, h5{
     }
 }
 
+
+.customer-support{
+    background-color: rgba(0,0,0, 0.01);
+    padding: 50px 0px;
+    .customer-support-box{
+        background-color: white;
+        border: 1px solid rgba(0,0,0, 0.03);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.13);
+
+        .customer-support-left{
+            padding: 30px 30px 13px;
+            h4{
+                color: #cd2122;
+                line-height: 36px;
+                font-weight: 100;	
+                padding-bottom: 20px;
+                word-spacing: 4px;
+            }
+            ul{
+                padding: 0px;
+                li{
+                    list-style: none;
+                    background: url("../images/icons8-checked-48.png") no-repeat;
+                    background-size: 7%;
+                    padding-left: 3vw;
+                    margin: 15px 0px;
+                    h5{
+                        color:rgb(87, 85, 85);
+                        font-size: 16px;
+                        word-spacing: 3px;
+                    }
+                    p{
+                        color:rgb(150, 149, 149);
+                    }
+                }
+            }
+            a{
+                position: relative;
+                background-color: #cd2122;
+                color: white;
+                text-decoration: none;
+                padding: 11px 35px;
+                border-radius: 4px;
+                font-size: 13px;
+                font-weight: 500;
+                left: 10%;
+                top: 6%;
+            }
+        }
+        .customer-support-right{
+            img{
+                height:350px;
+            }
+        }
+    }
+}
 
 /* Reviews */
 .testimonial{
@@ -624,8 +681,8 @@ h1, h2, h3, h4, h5{
     h1{ font-size: 22px !important;}
     h3{ font-size: 18px !important;}
     h4{ font-size: 17px !important;}
-    h5{ font-size: 14px !important;}
-    p{ font-size: 12px !important;}
+    h5{ font-size: 15px !important;}
+    p{ font-size: 14px !important;}
     .banner{ height:83vw;
         img{ height: 83vw}
     }
@@ -662,7 +719,7 @@ h1, h2, h3, h4, h5{
         h4{ line-height: 15px !important; font-weight: 500 !important;}
         li{ background-size: 6% !important; padding-left: 8vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
     }
-    .fastest-rummy{
+    .fastest-rummy{ padding-bottom: 30px;
         h1{ padding: 40px 0px 30px;
             &:after{ width: 30%; margin-top: 10px; margin-left: 32%;}
         }
@@ -683,14 +740,24 @@ h1, h2, h3, h4, h5{
                 p{ line-height: 22px; padding-top: 10px;}
                 img{ width: 100%; margin:0px}
             }
-            .responsible-image{
-                display: none;
-            }
-            .responsible-block{
-                width: 100%;
-                margin-top: 25px;
+            .responsible-image{ display: none;}
+            .responsible-block{ width: 100%; margin-top: 25px;
                 span{ display: none;}
             }
+        }
+    }
+
+
+    .customer-support{
+        .customer-support-left{ padding-bottom: 50px !important;
+            h4{ line-height: 24px !important;}
+            ul{
+                li{ padding-left: 9vw !important;}
+            }
+        }
+        .customer-support-right{
+            #carouselFade{ padding: 10px;}
+            img{ height: auto !important;}
         }
     }
 
