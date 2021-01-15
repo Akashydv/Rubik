@@ -72,6 +72,11 @@ h6{ font-size: 16px !important}
         }
     }
     .navbar{
+        .quote{
+            width: 4vw;
+            height: 60px;
+            margin-right: 0;
+        }
         img{
             width:110px;
             height: 110px;
@@ -727,6 +732,7 @@ h6{ font-size: 16px !important}
 
 @media only screen and (max-width: 575.98px){
     h1{ font-size: 22px !important;}
+    h2{ font-size: 20px !important;}
     h3{ font-size: 18px !important;}
     h4{ font-size: 17px !important;}
     h5{ font-size: 15px !important;}
@@ -764,11 +770,11 @@ h6{ font-size: 16px !important}
         img{ width:50px !important; height: 50px !important; margin-bottom: 3vw;}
         h1{ padding-bottom: 0px; text-align: center;}
         h3{ font-size: 300; text-align: center;}
-        h4{ line-height: 15px !important; font-weight: 500 !important;}
+        h5{ line-height: 15px !important; font-weight: 500 !important;}
         li{ background-size: 6% !important; padding-left: 8vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
     }
     .fastest-rummy{ padding-bottom: 30px;
-        h1{ padding: 40px 0px 30px;
+        h2{ padding: 40px 0px 30px;
             &:after{ width: 30%; margin-top: 10px; margin-left: 32%;}
         }
         .fastest-rummy-right{ 
@@ -783,7 +789,7 @@ h6{ font-size: 16px !important}
         }
         .rummy-game-right{
             .head-block{
-                h1{
+                h2{
                     &::before{ width: 13%; margin-top: -10px;}
                 }
                 p{ line-height: 22px; padding-top: 10px;}
@@ -873,6 +879,153 @@ h6{ font-size: 16px !important}
             i{ font-size: 13px;}
         }
     }   
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px){
+    h1{ font-size: 22px !important;}
+    h3{ font-size: 18px !important;}
+    h4{ font-size: 17px !important;}
+    h5{ font-size: 15px !important;}
+    p{ font-size: 14px !important;}
+    .banner{ height:83vw;
+        img{ height:auto}
+    }
+    .header{ background: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.25), rgba(0,0,0,0.16));
+        .header-top{ padding:0px 0px 5px;
+            .social-icons{ width: 30%;
+                i{ font-size: 11px; margin: 0vw 1.5vw;}
+            }
+            .header-top-content{ width: 70%;
+                a{ font-size: 11px; text-transform: capitalize;}
+            }
+        }
+        .navbar{
+            .navbar-toggler{ padding: .42rem .75rem; font-size: 0.8rem;}
+            img{ width: 45px; height: 45px;}
+            .navbar-nav{ background-color: rgba(0,0,0, 0.7); width: 100%;
+                .active{ background-color: #cd2122 !important;}
+                .nav-item{ text-align: center; transition: all ease-in-out 0.7s;
+                    &:hover{ background-color: #cd2122;}
+                    .nav-link{ font-size: 11px;
+                        &:before{display: none}
+                    }
+                }
+            }
+        }
+    }
+    .text{
+        .text-div{
+            &::before{ height: ;}
+        }
+    }
+    .about-section{
+        .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4)}
+        .row{ padding: 4vw 7vw 2vw;}
+        .about-blocks-image, .about-blocks-head{ width:100% !important; text-align: left !important;}
+        img{ width:50px !important; height: 50px !important; margin-bottom: 3vw;}
+        h1{ padding-bottom: 0px; text-align: center;}
+        h3{ font-size: 300; text-align: center;}
+        h4{ line-height: 15px !important; font-weight: 500 !important;}
+        li{ background-size: 6% !important; padding-left: 8vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
+    }
+    .fastest-rummy{ padding-bottom: 30px;
+        h1{ padding: 40px 0px 30px;
+            &:after{ width: 30%; margin-top: 10px; margin-left: 32%;}
+        }
+        .fastest-rummy-right{ 
+            img{ height: auto; padding: 0px;}
+            .rc-rcbrand-item{ margin-left: -5px;}
+            .rc-rcbrand-nav-left, .rc-rcbrand-nav-right { display: none;}
+        }
+    }
+    .rummy-game{ padding: 30px 0px;
+        .rummy-game-left{
+            img{ width: 100% !important; left: 0px !important; margin-bottom: 30px;}
+        }
+        .rummy-game-right{
+            .head-block{
+                h1{
+                    &::before{ width: 13%; margin-top: -10px;}
+                }
+                p{ line-height: 22px; padding-top: 10px;}
+                img{ width: 100%; margin:0px}
+            }
+            .responsible-image{ display: none;}
+            .responsible-block{ width: 100%; margin-top: 25px;
+                span{ display: none;}
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    h1{ font-size: 22px !important;}
+    h3{ font-size: 18px !important;}
+    h4{ font-size: 17px !important;}
+    h5{ font-size: 15px !important;}
+    p{ font-size: 14px !important;}
+    .banner{ height:83vw;
+        img{ height: 83vw}
+    }
+    .header{ background: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.25), rgba(0,0,0,0.16));
+        .header-top{ padding:0px 0px 5px;
+            .social-icons{ width: 30%;
+                i{ font-size: 11px; margin: 0vw 1.5vw;}
+            }
+            .header-top-content{ width: 70%;
+                a{ font-size: 11px; text-transform: capitalize;}
+            }
+        }
+        .navbar{
+            .navbar-toggler{ padding: .42rem .75rem; font-size: 0.8rem;}
+            img{ width: 45px; height: 45px;}
+            .navbar-nav{ background-color: rgba(0,0,0, 0.7); width: 100%;
+                .active{ background-color: #cd2122 !important;}
+                .nav-item{ text-align: center; transition: all ease-in-out 0.7s;
+                    &:hover{ background-color: #cd2122;}
+                    .nav-link{ font-size: 11px;
+                        &:before{display: none}
+                    }
+                }
+            }
+        }
+    }
+    .about-section{
+        .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4)}
+        .row{ padding: 4vw 7vw 2vw;}
+        .about-blocks-image, .about-blocks-head{ width:100% !important; text-align: left !important;}
+        img{ width:50px !important; height: 50px !important; margin-bottom: 3vw;}
+        h1{ padding-bottom: 0px; text-align: center;}
+        h3{ font-size: 300; text-align: center;}
+        h4{ line-height: 15px !important; font-weight: 500 !important;}
+        li{ background-size: 6% !important; padding-left: 8vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
+    }
+    .fastest-rummy{ padding-bottom: 30px;
+        h1{ padding: 40px 0px 30px;
+            &:after{ width: 30%; margin-top: 10px; margin-left: 32%;}
+        }
+        .fastest-rummy-right{ 
+            img{ height: auto; padding: 0px;}
+            .rc-rcbrand-item{ margin-left: -5px;}
+            .rc-rcbrand-nav-left, .rc-rcbrand-nav-right { display: none;}
+        }
+    }
+    .rummy-game{ padding: 30px 0px;
+        .rummy-game-left{
+            img{ width: 100% !important; left: 0px !important; margin-bottom: 30px;}
+        }
+        .rummy-game-right{
+            .head-block{
+                h1{
+                    &::before{ width: 13%; margin-top: -10px;}
+                }
+                p{ line-height: 22px; padding-top: 10px;}
+                img{ width: 100%; margin:0px}
+            }
+            .responsible-image{ display: none;}
+            .responsible-block{ width: 100%; margin-top: 25px;
+                span{ display: none;}
+            }
+        }
+    }
 }
 @media only screen  and (min-width : 1224px){
     .fastest-rummy{
