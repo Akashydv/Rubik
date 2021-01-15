@@ -217,8 +217,8 @@
             India's Easiest Rummy Game
         </h1>
         <div class="row">
-            <div class="col-lg-4 d-none d-lg-block fastest-rummy-left">
-                <div class="mx-auto col-8">
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="col-9 fastest-rummy-left">
                 <h4>Osom Rummy</h4>
                 <p>Its a world that promises entertainment, teaches decision-making and rewards you with cash prizes as well. </p>
                 <a href="#">Show More</a>
@@ -524,8 +524,79 @@
     </div>
 </section>    
 <!-- Mobile Reviews End-->
-	
-	
+    
+
+<section class="payment">
+    <div class="payment-options">
+        <h3>Payment Options</h3><hr>
+        <ul id="rcbrand2">                
+            <li><img src="images/payment/CashFree.png"></li>
+            <li><img src="images/payment/phonepe.png"></li>
+            <li><img src="images/payment/Razorpay.png"></li>
+            <li><img src="images/payment/MobiKwik.png"></li>
+            <li><img src="images/payment/easebuzz_logo.png"></li>
+            <li><img src="images/payment/paytm.png"></li>
+            <li><img src="images/payment/upi.png"></li>
+        </ul>
+    </div>
+</section>
+
+<!-- FOOTER PART -->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 footer-top">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <img src="images/logo2.png">
+                        <h1>Rewarding Rummy Platform</h1>
+                    </div>
+                    <div class="col-12 col-lg-4 follow">
+                        <span>Follow Us On :</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/osomrummy/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/osom_rummy/"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div><hr>
+            <div class="col-lg-5 border-end border-secondary footer-block footer-first-block">
+                <div class="row">
+                    <div class="col-7 download-btns">
+                        <p>Download Osom Rummy App and Play Now</p>
+                        <img src="images/appstore.png">
+                        <img src="images/googlepay.png">
+                    </div>
+                    <div class="col-5 footer-list">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Products & Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg border-end border-secondary footer-block footer-second-block">
+                <img src="images/footer-fb.PNG">
+            </div>
+            <div class="col-lg footer-block footer-last-block">
+                <h3>Get in touch</h3>
+                <p>Tel: 0124-1234567<br><span>Email: </span> cs@osomgame.com</p>
+                <h5>Osom Rummy Pvt. Ltd.</h5>
+                <p>562-563 B2 Tower, Spaze i-Tech Park Gurgaon, Haryana 122001</p>
+            </div><hr>
+            <div class="col-12 copyright">
+                <p>Copyright &copy; 2020 Rubik Cube Technology India Pvt. Ltd. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- Footer End -->
+
+
 <!-- Javascript -->
 <script>
         $(window).ready(function() {
@@ -559,8 +630,41 @@
                 }
             });        
         });
-    </script>
+</script>
 
+<script>
+    $(window).ready(function() {
+        $("#rcbrand2").rcbrand({
+            visibleItems: 4,
+            itemsToScroll: 1,
+            animationSpeed: 150,
+            infinite: true,
+            navigationTargetSelector: null,
+            autoPlay: {
+                enable: true,
+                interval: 5000,
+                pauseOnHover: true
+            },
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint:480,
+                    visibleItems: 1,
+                    itemsToScroll: 1
+                },
+                landscape: {
+                    changePoint:640,
+                    visibleItems: 2,
+                    itemsToScroll: 1
+                },
+                tablet: {
+                    changePoint:768,
+                    visibleItems: 3,
+                    itemsToScroll: 1
+                }
+            }
+        });        
+    });
+</script>
 
 
 
