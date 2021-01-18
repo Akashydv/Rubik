@@ -741,6 +741,18 @@ h6{ font-size: 16px !important}
     border-radius: 10px;
     box-shadow: 0px 0px 3px 1px black;
     padding-bottom: 30px;
+    span{
+        position: absolute;
+        right: 0;
+        top:0;
+        padding: 3px 10px;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
+    }
     img{
         width: 100%;
         height: auto;
@@ -750,17 +762,18 @@ h6{ font-size: 16px !important}
     }
     a{
         padding: 0px 30px;
-        color: white;
         text-decoration: none;
-        border: 1px solid white;
         padding: 7px 17px;
         font-size: 13px;
         border-radius: 5px;
         font-weight: 500;
+        background-color: white;
+        color: #cd2122;
         &:hover{
-            background-color: white;
-            color: #cd2122;
+            color: white;
             text-decoration: none;
+            background-color: #cd2122;
+            border: 1px solid white;
         }
     }
     
