@@ -116,7 +116,8 @@ h6{ font-size: 16px !important}
         position: relative;
         background-color: #cd2122;
         color: white;
-        border-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         text-align: center;
         padding: 0vw 4vw 1vw;
         text-align: left;
@@ -130,6 +131,7 @@ h6{ font-size: 16px !important}
             background-color: #cd2122;
             transform: skewY(2deg);
             height:4vw;
+            top:-1vw;
             left:0;
             z-index: 10000;
         }
@@ -168,7 +170,6 @@ h6{ font-size: 16px !important}
             border-style: solid;
             border-width: 16px;
             display: inline-block;
-            font-size: 50px;
             position: absolute;
             background-color: transparent;
             border-bottom-style: solid;
@@ -371,11 +372,11 @@ h6{ font-size: 16px !important}
         .responsible-image{
             display: inline-block;
             width: 20%;
-            margin-top: 70px;
+            margin-top: 30px;
         }
         .responsible-block{
             width: 80%;
-            margin-top: 70px;
+            margin-top: 30px;
             box-shadow: 0px 0px 10px 0px rgb(207, 207, 207);
             padding: 20px 30px;
             float: right;
@@ -730,6 +731,7 @@ h6{ font-size: 16px !important}
 }
 
 
+/* For Small Mobiles */
 @media only screen and (max-width: 575.98px){
     h1{ font-size: 22px !important;}
     h2{ font-size: 20px !important;}
@@ -741,14 +743,6 @@ h6{ font-size: 16px !important}
         img{ height: 83vw}
     }
     .header{ background: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.25), rgba(0,0,0,0.16));
-        .header-top{ padding:0px 0px 5px;
-            .social-icons{ width: 30%;
-                i{ font-size: 11px; margin: 0vw 1.5vw;}
-            }
-            .header-top-content{ width: 70%;
-                a{ font-size: 11px; text-transform: capitalize;}
-            }
-        }
         .navbar{ padding: 0 !important;
             .navbar-toggler{ padding: .42rem .75rem; font-size: 0.8rem;}
             img{ width: 50px; height: 50px;}
@@ -872,9 +866,13 @@ h6{ font-size: 16px !important}
         }
     }   
 }
+
+
+/* For Large Mobiles */
 @media only screen and (min-width: 576px) and (max-width: 767.98px){
-    h1{ font-size: 22px !important;}
-    h3{ font-size: 18px !important;}
+    h1{ font-size: 24px !important;}
+    h2{ font-size: 22px !important;}
+    h3{ font-size: 20px !important;}
     h4{ font-size: 17px !important;}
     h5{ font-size: 15px !important;}
     p{ font-size: 14px !important;}
@@ -882,17 +880,10 @@ h6{ font-size: 16px !important}
         img{ height:auto}
     }
     .header{ background: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.25), rgba(0,0,0,0.16));
-        .header-top{ padding:0px 0px 5px;
-            .social-icons{ width: 30%;
-                i{ font-size: 11px; margin: 0vw 1.5vw;}
-            }
-            .header-top-content{ width: 70%;
-                a{ font-size: 11px; text-transform: capitalize;}
-            }
-        }
+
         .navbar{ padding: 0 !important;
             .navbar-toggler{ padding: .42rem .75rem; font-size: 0.8rem;}
-            img{ width: 45px; height: 45px;}
+            img{ width: 55px; height: 55px;}
             .navbar-nav{ background-color: rgba(0,0,0, 0.7); width: 100%;
                 .active{ background-color: #cd2122 !important;}
                 .nav-item{ text-align: center; transition: all ease-in-out 0.7s;
@@ -905,70 +896,134 @@ h6{ font-size: 16px !important}
         }
     }
     .text{
-        .text-div{
-            &::before{ height: ;}
+        .text-div{ padding: 3vw 3vw 6vw; border-radius: 15px;
+            &::before{ display:none;}
+            h4{ padding-right: 0px;}
+            p{ padding-right: 0px;}
         }
+        #div-arrow{ border-width: 13px;}
     }
-    .about-section{
+    .about-section{ margin-top: 40px;
         .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4)}
-        .row{ padding: 4vw 7vw 2vw;}
+        .row{ padding: 2vw 7vw;}
         .about-blocks-image, .about-blocks-head{ width:100% !important; text-align: left !important;}
-        img{ width:50px !important; height: 50px !important; margin-bottom: 3vw;}
+        img{ width:60px !important; height: 60px !important; margin-bottom: 2vw;}
         h1{ padding-bottom: 0px; text-align: center;}
         h3{ font-size: 300; text-align: center;}
-        h4{ line-height: 15px !important; font-weight: 500 !important;}
-        li{ background-size: 6% !important; padding-left: 8vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
+        h5{ line-height: 15px !important; font-weight: 500 !important;}
+        li{ background-size: 7% !important; padding-left: 4vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
     }
     .fastest-rummy{ padding-bottom: 30px;
-        h1{ padding: 40px 0px 30px;
-            &:after{ width: 30%; margin-top: 10px; margin-left: 32%;}
+        h2{ padding: 40px 0px 30px;
+            &:after{ width: 14%; margin-top: 10px; margin-left: 40%;}
         }
         .fastest-rummy-right{ 
             img{ height: auto; padding: 0px;}
-            .rc-rcbrand-item{ margin-left: -5px;}
+            .rc-rcbrand-item{ margin-left: -4.5px;}
             .rc-rcbrand-nav-left, .rc-rcbrand-nav-right { display: none;}
         }
     }
-    .rummy-game{ padding: 30px 0px;
+    .rummy-game{ padding: 60px 0px 30px;
         .rummy-game-left{
-            img{ width: 100% !important; left: 0px !important; margin-bottom: 30px;}
+            img{ width: 100%; left: 0px}
         }
         .rummy-game-right{
             .head-block{
-                h1{
+                h2{
                     &::before{ width: 13%; margin-top: -10px;}
                 }
                 p{ line-height: 22px; padding-top: 10px;}
-                img{ width: 100%; margin:0px}
+                img{ width: 100%; margin:10px 0px 40px;}
             }
             .responsible-image{ display: none;}
-            .responsible-block{ width: 100%; margin-top: 25px;
-                span{ display: none;}
-            }
         }
     }
+    .get-app{ padding: 10px 0px 60px;
+        h1{ padding: 20px 0px}
+        .p-block{ margin-top: 17px;
+            h4{ padding-bottom: 5px;}
+            p{ line-height: 25px; text-align: left;}
+            a{ font-size: 12px; top:5px}
+        }
+        .i-block{ margin-top: 10px;}
+    }
+
+    .customer-support{
+        .customer-support-left{ padding-bottom: 50px !important;
+            h4{ line-height: 24px !important; padding-bottom: 8px !important;}
+            ul{
+                li{ padding-left: 7vw !important; background-size: 5% !important;
+                    h6{ font-size: 14px !important;}
+                }
+            }
+        }
+        .customer-support-right{
+            img{ height: auto !important;}
+        }
+    }
+
+    .testimonial{
+        .testimonial-block:nth-child(1), .testimonial-block:nth-child(2){ padding-top: 20px; padding-bottom: 20px;}
+        .review-by{ top:-6vw;
+            h4{ margin-bottom: 1px;}
+            p{ margin-bottom: 0px;}
+        }     
+        .review-block{ margin-top: 0px;
+            span{ width: 30vw; height: 30vw; top: -7vw; right: -7vw;}
+        }
+        img{ width:70px !important; height:70px !important; padding: 5px !important; }    
+        #circle-span{
+            width: 30vw !important;
+            height: 30vw !important;
+        }
+    }
+    .payment{
+        .payment-options{
+            padding: 30px 0px !important;
+            h1{ font-size: 25px;}
+            hr{ width:15%; left: 40%}
+            img{ width: 120px; margin-top: 14px;}
+        }
+    }
+    .footer{ font-size: 12px;
+        h3{ font-size: 15px; margin-bottom: 10px;}
+        .footer-block{ padding: 20px 20px 0px !important;}
+        .footer-first-block{ border:none !important;
+            .download-btns{
+                img{ width: 100px; height:auto}
+            }
+            .footer-list{
+                li{ padding-bottom: 5px !important;}
+            }
+        }
+        .footer-last-block{
+            h5{ font-size: 13px; margin-top: 0px;}
+        }
+        .copyright{ text-align: left;
+            p{ margin-bottom: 0px;}
+        }
+        .follow{ text-align:left;
+            i{ font-size: 13px;}
+        }
+    }   
 }
+
+
+/* For Tabs */
 @media only screen and (min-width: 768px) and (max-width: 991.98px){
-    h1{ font-size: 22px !important;}
-    h3{ font-size: 18px !important;}
-    h4{ font-size: 17px !important;}
-    h5{ font-size: 15px !important;}
-    p{ font-size: 14px !important;}
+    h1{ font-size: 23px !important;}
+    h3{ font-size: 19px !important;}
+    h4{ font-size: 18px !important;}
+    h5{ font-size: 16px !important;}
+    p{ font-size: 15px !important;}
     .banner{ height:83vw;
-        img{ height: 83vw}
+        img{ height: auto}
     }
     .header{ background: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.25), rgba(0,0,0,0.16));
-        .header-top{ padding:0px 0px 5px;
-            .social-icons{ width: 30%;
-                i{ font-size: 11px; margin: 0vw 1.5vw;}
-            }
-            .header-top-content{ width: 70%;
-                a{ font-size: 11px; text-transform: capitalize;}
-            }
-        }
+    
         .navbar{
             .navbar-toggler{ padding: .42rem .75rem; font-size: 0.8rem;}
-            img{ width: 45px; height: 45px;}
+            img{ width: 65px; height: 65px;}
             .navbar-nav{ background-color: rgba(0,0,0, 0.7); width: 100%;
                 .active{ background-color: #cd2122 !important;}
                 .nav-item{ text-align: center; transition: all ease-in-out 0.7s;
@@ -980,46 +1035,123 @@ h6{ font-size: 16px !important}
             }
         }
     }
-    .about-section{
+    .text{
+        .text-div{ padding: 3vw 3vw 6vw; border-radius: 15px;
+            &::before{ display:none;}
+            h4{ padding-right: 0px;}
+            p{ padding-right: 0px;}
+        }
+        #div-arrow{ border-width: 13px;}
+    }
+    .about-section{ margin-top: 40px;
         .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4)}
-        .row{ padding: 4vw 7vw 2vw;}
+        .row{ padding: 2vw 7vw;}
         .about-blocks-image, .about-blocks-head{ width:100% !important; text-align: left !important;}
-        img{ width:50px !important; height: 50px !important; margin-bottom: 3vw;}
+        img{ width:60px !important; height: 60px !important; margin-bottom: 2vw;}
         h1{ padding-bottom: 0px; text-align: center;}
         h3{ font-size: 300; text-align: center;}
-        h4{ line-height: 15px !important; font-weight: 500 !important;}
-        li{ background-size: 6% !important; padding-left: 8vw !important; font-size: 14px !important; line-height: 23px !important; font-weight: 400;}
+        h5{ line-height: 15px !important; font-weight: 500 !important;}
+        li{ background-size: 6% !important; padding-left: 3.7vw !important; font-size: 14px !important; line-height: 25px !important; font-weight: 400;}
     }
     .fastest-rummy{ padding-bottom: 30px;
-        h1{ padding: 40px 0px 30px;
-            &:after{ width: 30%; margin-top: 10px; margin-left: 32%;}
+        h2{ padding: 40px 0px 30px;
+            &:after{ width: 14%; margin-top: 10px; margin-left: 40%;}
         }
         .fastest-rummy-right{ 
             img{ height: auto; padding: 0px;}
-            .rc-rcbrand-item{ margin-left: -5px;}
+            .rc-rcbrand-item{ margin-left: -4px;}
             .rc-rcbrand-nav-left, .rc-rcbrand-nav-right { display: none;}
         }
     }
-    .rummy-game{ padding: 30px 0px;
+    .rummy-game{ padding: 60px 0px 30px;
         .rummy-game-left{
-            img{ width: 100% !important; left: 0px !important; margin-bottom: 30px;}
+            img{ width: 100%; left: 0px}
         }
         .rummy-game-right{
             .head-block{
-                h1{
-                    &::before{ width: 13%; margin-top: -10px;}
+                h2{
+                    &::before{ width: 8%; margin-top: -10px;}
                 }
                 p{ line-height: 22px; padding-top: 10px;}
-                img{ width: 100%; margin:0px}
+                img{ width: 85%; margin:10px 0px 40px;}
             }
             .responsible-image{ display: none;}
-            .responsible-block{ width: 100%; margin-top: 25px;
-                span{ display: none;}
+        }
+    }
+    .get-app{ padding: 10px 0px 60px;
+        h1{ padding: 20px 0px}
+        .p-block{ margin-top: 17px;
+            h4{ padding-bottom: 5px;}
+            p{ line-height: 25px; text-align: left;}
+            a{ font-size: 12px; top:5px}
+        }
+        .i-block{ margin-top: 10px;}
+    }
+    .customer-support{
+        .customer-support-left{ padding-bottom: 50px !important;
+            h4{ line-height: 24px !important; padding-bottom: 8px !important;}
+            ul{
+                li{ padding-left: 5.6vw !important; background-size: 4.3% !important;
+                    h6{ font-size: 14px !important;}
+                }
             }
+        }
+        .customer-support-right{
+            img{ height: auto !important;}
+        }
+    }
+
+    .testimonial{
+        .testimonial-block:nth-child(1), .testimonial-block:nth-child(2){ padding-top: 20px; padding-bottom: 20px;}
+        .review-by{ top:-6vw;
+            h4{ margin-bottom: 1px;}
+            p{ margin-bottom: 0px;}
+        }     
+        .review-block{ margin-top: 20px;
+            p{ padding: 30px 50px;}
+            span{ width: 30vw; height: 30vw; top: -7vw; right: -7vw;}
+        }
+        img{ width:70px !important; height:70px !important; padding: 5px !important; }    
+        #circle-span{
+            width: 30vw !important;
+            height: 30vw !important;
+        }
+    }
+    .payment{
+        .payment-options{
+            padding: 30px 0px !important;
+            h1{ font-size: 25px;}
+            hr{ width:15%; left: 40%}
+            img{ width: 120px; margin-top: 14px;}
+        }
+    }
+    .footer{ font-size: 12px;
+        h3{ font-size: 15px; margin-bottom: 10px;}
+        .footer-block{ padding: 20px 20px 0px !important;}
+        .footer-first-block{ border:none !important;
+            .download-btns{
+                img{ width: 100px; height:auto}
+            }
+            .footer-list{
+                li{ padding-bottom: 5px !important;}
+            }
+        }
+        .footer-last-block{
+            h5{ font-size: 13px; margin-top: 0px;}
+        }
+        .copyright{ text-align: left;
+            p{ margin-bottom: 0px;}
+        }
+        .follow{ text-align:left;
+            i{ font-size: 13px;}
         }
     }
 }
-@media only screen  and (min-width : 1224px){
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px){
+
+}
+@media only screen  and (min-width : 1200px){
     .fastest-rummy{
         .fastest-rummy-right{
             .rc-rcbrand-item{ width: 298px !important;}
