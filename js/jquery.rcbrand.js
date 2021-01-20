@@ -1,4 +1,4 @@
-/*www.oguzhansengul.com*/
+
 (function ($) {
 
     $.fn.rcbrand = function (options) {
