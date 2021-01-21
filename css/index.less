@@ -181,6 +181,29 @@ h6{ font-size: 16px !important}
     }
 } 
 
+
+.online-players{
+    position: fixed;
+    bottom: 2px;
+    right: 1px;
+    border: 1px solid white;
+    background-color: #cd2122;
+    padding: 6px 13px;
+    font-size: 17px !important;
+    font-weight: 400;
+    z-index: 1000000;
+}
+
+.online-players-mobile{
+    position: relative;
+    width: 100%;
+    background-color: #1e376f;
+    padding: 6px 13px;
+    font-size: 13px !important;
+    font-weight: 400;
+    z-index: 1000000;
+}
+
 /* Features Section */
 .about-section{
     position: relative;
@@ -433,7 +456,7 @@ h6{ font-size: 16px !important}
         a{
             position: relative;
             background-color: transparent;
-	    border: 2px solid white;
+            border: 2px solid white;
             padding: 13px 40px;
             border-radius: 5px;
             color: white;
@@ -850,7 +873,7 @@ h6{ font-size: 16px !important}
         .navbar{ padding: 0 !important;
             .navbar-toggler{ padding: .42rem .75rem; font-size: 0.8rem;}
             img{ width: 50px; height: 50px;}
-            .navbar-nav{ background-color: rgba(0,0,0, 0.7); width: 65%;float: right;
+            .navbar-nav{ background-color: rgba(0,0,0, 0.7);width: 65%; float: right;
                 .active{ background-color: #cd2122 !important;}
                 .nav-item{ text-align: center; transition: all ease-in-out 0.7s;
                     &:hover{ background-color: #cd2122;}
@@ -861,6 +884,7 @@ h6{ font-size: 16px !important}
             }
         }
     }
+    .online-players{ font-size: 14px !important;}
     .about-section{
         .about-blocks{ padding-top: 2vw; border-bottom: 1px solid rgba(0,0,0, 0.4)}
         .row{ padding: 4vw 7vw 2vw;}
