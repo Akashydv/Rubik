@@ -21,6 +21,15 @@
     background-position: center;
     height: 32vw;
 }
+.refund-banner{
+    position: relative;
+    width: 100%;
+    background-image: url('../images/refund.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 32vw;
+}
 .content{
     padding: 20px 0px 10px;
 }
