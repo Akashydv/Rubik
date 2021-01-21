@@ -27,12 +27,11 @@
             try{
                 fbq('trackCustom', 'download', {promotion: 'share_discount_10%'});
             }catch(err){
-            console.log(err)
+            console.log(err);
             }
             window.location.href = "https://unionapi.osomgame.com/download.php?appid=23001"
         }
     </script>
-    
 </head>
 
 
@@ -40,7 +39,7 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="iGYBU2wl"></script>    
 <section class="banner d-none d-lg-block">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/main-bgq.jpg" class="d-block w-100" alt="...">
@@ -55,11 +54,11 @@
             <img src="images/main-bgggg.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </a>
@@ -106,29 +105,29 @@
         </div>
         <nav class="navbar col-12 col-lg-11 mx-auto navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-              <a href="#"><img src="images/logo2.png"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a href="index.html"><img src="images/logo2.png"></a>
+              <button class="navbar-toggler collapsed navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Privacy Policy</a>
+                    <a class="nav-link" href="privacy.html">Privacy Policy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Refund Policy</a>
+                    <a class="nav-link" href="refund.html">Refund Policy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products & Services</a>
+                    <a class="nav-link" href="product.html">Products & Services</a>
                 </li>      
                 </ul>
             </div>
@@ -137,6 +136,10 @@
       </nav>
 </section>
 <!-- Menu End-->
+
+<div class="d-block d-lg-none text-light text-center online-players-mobile">
+    &nbsp;&nbsp;Online Players&nbsp;: &nbsp;"<span id="random-number">Loading...</span>"
+</div>
 
 <!-- Stick Note --
 <div class="text-center sticky-note" id="stickNote">
@@ -161,13 +164,16 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center">
                 <a href=javascript:download();>download</a>
-                <a href="about.html" >Read More</a>
+                <a href="about.html">read more</a>
             </div>
         </div>
         <span id="div-arrow"></span>
     </div>
 </section>
 <!-- About End -->
+<div class="d-none d-lg-block text-light text-center online-players">
+    &nbsp;&nbsp;Online Players&nbsp;: &nbsp;"<span id="random-number">Loading...</span>"
+</div>
 
 <!-- Features Start -->
 <section class="about-section">
@@ -363,7 +369,7 @@
         </div>
     </div>
 </section>
-<!-- Customer Support Ends -->	
+<!-- Customer Support Ends -->
 
 <!-- Reviews Start -->
     <section class="d-none d-lg-block testimonial">
@@ -586,7 +592,7 @@
                 </div>
             </div>
             <div class="marq d-block d-lg-none">
-                <marquee>Players from Andhra Pradesh, Tamil Nadu, Telangana, Assam and Odisha are not allowed to play online rummy for prizes. <a href="#">Know more</a></marquee>
+                <marquee behavior="scroll" direction="left"><p>Players from Andhra Pradesh, Tamil Nadu, Telangana, Assam and Odisha are not allowed to play online rummy for prizes. <a href="#">Know more</a> </p></marquee>
             </div>
             <hr>
             <div class="col-lg-5 border-end border-secondary footer-block footer-first-block">
@@ -690,7 +696,7 @@
                 portrait: {
                     changePoint:480,
                     visibleItems: 2,
-                    itemsToScroll: 1
+                    itemsToScroll: 2
                 },
                 landscape: {
                     changePoint:640,
@@ -706,6 +712,16 @@
         });        
     });
 </script>
+
+<script>
+    (setInterval(function(){
+      var random = document.getElementById('random-number');
+      var number = Math.floor((5 + Math.random()) * 10000);
+      random.innerHTML = number;
+    }, 4000))
+    ();
+  </script>
+
 <script>
     AOS.init();
 </script>
