@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us | Osom Rummy</title>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/sub.css'>
+    <title>Contact Us | OSOM RUMMY</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet/less" href="css/index.less">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet/less" type="text/css" href="css/index.less" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/less@3.13" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rcbrand.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function download() {
+            try{
+                fbq('trackCustom', 'download', {promotion: 'share_discount_10%'});
+            }catch(err){
+            console.log(err);
+            }
+            window.location.href = "https://unionapi.osomgame.com/download.php?appid=23001"
+        }
+    </script>
 </head>
 <body>
-    <!-- banner -->
-    <section class="banner"></section>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="iGYBU2wl"></script>
+<section class="contact-banner"></section>    
+<!--Menu Bar--> 
+<section class="header">
+    <div class="container">
+        <div class="col-12 col-lg-11 d-none d-lg-flex mx-auto header-top">
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.facebook.com"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.twitter.com/osom_rummy/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com"><i class="fa fa-google"></i></a>
+            </div>
+            <div class="header-top-content">
+                <a href="#">&#128383; &nbsp;Support</a>
+                <a href="responsible.html">&#10070; &nbsp;Responsible Gaming</a>
+            </div>
+        </div>
+        <nav class="navbar col-12 col-lg-11 mx-auto navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a href="index.html"><img src="images/logo2.png"></a>
+              <button class="navbar-toggler collapsed navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="refund.html">Refund Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products & Services</a>
+                </li>      
+                </ul>
+            </div>
+            <img class="d-none d-lg-block quote" src="images/get_quote.png">
+        </div>
+      </nav>
+</section>
+<!-- Menu End-->
+
     <div class="container-fluid">
         <div class="row">
             <div class="col d-none d-md-block col-md-4 col-lg border-right left-contact-block">
@@ -27,7 +95,7 @@
                         <h4>Partner Enquiries</h4>
                     </div>
                     <div class="enquiry-content">
-                        <img src="images/contact_us/partner.png">
+                        <img src="images/partner.png">
                         <p>
                             partnerenquiry@osomrummy.com
                             Call us:    
@@ -41,7 +109,7 @@
                         <h4>Instant Enquiries</h4>
                     </div>
                     <div class="enquiry-content">
-                        <img src="images/contact_us/instant.png">
+                        <img src="images/instant.png">
                         <p>
                             partnerenquiry@osomrummy.com
                             Call us:    
@@ -62,18 +130,18 @@
                     <input type="number" id="form-field" name="mobile" class="form-control mobile" maxlength="10" placeholder="Mobile Number">
                 
                     <textarea rows="4" id="form-field" name="query" class="form-control query" placeholder="Please Enter Your Feedback/Query" style="margin-bottom: 3vw;"></textarea>    
-                    <input type="submit" class="form-control bg-danger text-light submit-btn">            
+                    <input type="submit" class="form-control text-light submit-btn">            
                 </form>
                 
             </div>
             <div class="col-lg col-sm col-4 col-md-3 px-0 border-left text-center right-contact-block">
                 <div class="border-bottom border-secondary support">
-                    <img src="images/contact_us/support.png">
+                    <img src="images/support.png">
                     <h4>Contact Support</h4>
                     <p><span style="font-weight: 600;">Email:&nbsp;</span>cs@osomgame.com</p>
                 </div>
                 <div class="border-bottom border-secondary address">
-                    <img src="images/contact_us/address.png">
+                    <img src="images/address.png">
                     <h4>Office Address:</h4>
                     <p>A 1/4, DLF 
                        Phase 1, Sector 26A,
@@ -84,112 +152,73 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex footer-flex align-items-center">
-                        <div class="p-2"><img src="images/logo2.png" alt="logo" style="width:100px;"/></div>
-                        <div class="p-2">
-                            <p class="foot-txt">India's Most <span>Rewarding Rummy Platform</span></p>
-                        </div>
-                        <div class="p-2 ml-auto hidesec">
-                        <div class="instantplay loginbtn py-2 text-center mr-2 sprite_d-flex" onclick="download()"><i class="fa fa-download fa-2x buttonDownload download_icon_after"></i> &nbsp;&nbsp;&nbsp; Download</div>
-                        </div>
-    
+     <!-- FOOTER PART -->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-lg-block col-12 footer-top">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <img src="images/logo2.png">
+                        <h2>Rewarding Rummy Platform</h2>
+                    </div>
+                    <div class="col-12 col-lg-4 follow">
+                        <span>Follow Us On :</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/osomrummy/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/osom_rummy/"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-    
-            <div class="linefull"></div>
-    
-            <div class="row pt-4 pb-3">
-                <div class="col-md-4">
-                    <div class="txtcen-foot">
-                        <p class="foot-paratxt">Download OsomRummy app & Play Now</p>
-                        <div>
-                            <a><img src="images/appstore.png" class="appstr cuspd" onclick="download()"/></a>
-                            <a><img src="images/googlepay.png" class="appstr" onclick="download()"/></a>
-                        </div>
+            <div class="marq d-block d-lg-none">
+                <marquee>Players from Andhra Pradesh, Tamil Nadu, Telangana, Assam and Odisha are not allowed to play online rummy for prizes. <a href="#">Know more</a></marquee>
+            </div>
+            <hr>
+            <div class="col-lg-5 border-end border-secondary footer-block footer-first-block">
+                <div class="row">
+                    <div class="col-7 col-sm-6 col-md-6 download-btns">
+                        <p>Download Osom Rummy</p>
+                        <img src="images/appstore.png">
+                        <img src="images/googlepay.png">
                     </div>
-                </div>
-    
-                <div class="col-md-3 col-6" style="padding-left: 35px"> 
-                <div class="foot-listtxt foot-listtxt_bor"> 
-                <ul>
-                    <li><a href="about_us.html">About Us</a></li> 
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="refund.html">Refund Policy</a></li>
-                        <li><a href="how-to-play.html">How to Play Rummy</a></li>
-                        <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
-                        <li><a href="product_services.html">Product and Services</a></li>
-                        <li><a href="responsible_gaming.html">Responsible Gaming</a></li>
-                </ul>
-                </div>
-                </div>
-                <div class="col-md-3 col-6" style="padding-left: 35px">
-                    <div class="foot-listtxt foot-listtxt_bor">
-                        <div class="fb-page" data-href="https://www.facebook.com/OSOM-RUMMY-GAME-111675877153930/" data-tabs="timeline,events,messages" data-width="270" data-height="210" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OSOM-RUMMY-GAME-111675877153930/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OSOM-RUMMY-GAME-111675877153930/">OSOM RUMMY GAME</a></blockquote></div>
-                    <!--<ul>
-                        <li><a href="terms-conditions.html">How to Play Rummy</a></li>
-                        <li><a href="terms-conditions.html">Terms and Conditions</a></li>
-                        <li><a href="privacy-policy.html">Product and Services</a></li>
-                        <li><a href="privacy-policy.html">Responsible Gaming</a></li>
-                    </ul>-->
-                    </div>
-                </div>
-                <div class="col-md-2 col-6" style="padding-left: 35px">
-                    <div class="foot-listtxt">
-                        <p class="mb-0 foot-paratxt pb-2 paddtp">Social Icons</p>
-                        <div class="row">
-                        <a href="https://www.facebook.com/osomgame/" target="_blank"><div class="sprite bg-1">&nbsp;</div></a>
-                        <a href="https://www.instagram.com/osomrummy/" target="_blank"><div class="sprite bg-3">&nbsp;</div></a>
-                        <a href="https://https//twitter.com/osom_rummy" target="_blank"><div class="sprite bg-4">&nbsp;</div></a>
-                         <a href="https://www.youtube.com/results?search_query=osom+rummy" target="_blank"><div class="sprite bg-5">&nbsp;</div></a>
-                        </div>
+                    <div class="col-5 col-sm-6 col-md-6 footer-list">
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="refund.html">Refund Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="product.html">Products & Services</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="linefull"></div>
-    
-            <div class="row py-3">
-                <div class="col-md-9 col-6" style="padding-left: 35px">
-                    <div>
-                        <p class="foot-listtxt mb-0 pb-2">Payment Methods</p>
-                        <div>
-                            <img src="images/paytm.png" class="payimg" />
-                            <img src="images/UPI.png" class="payimg" />
-                            <img src="images/CashFree.webp" class="pr-2 payimg" />
-                            <img src="images/PhonePe.png" class="payimg" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6" style="padding-left: 35px">
-                    <div class="text-right txtlft">
-                        <p class="foot-listtxt mb-0 pb-2">Security & Certificates</p>
-                        <div>
-                            <a href="#" data-toggle="modal"><img src="images/TORF-icon.png" style="width:50px;"/></a>
-                            <a href="#" data-toggle="modal"><img src="images/iTech-icon.png" style="width:50px;" /></a>
-                            <a href="#" data-toggle="modal"><img src="images/Fraud-icon.png" style="width:50px;"/></a>
-                            <a href="#" data-toggle="modal"><img src="images/playresponsibly-icon.png" style="width:50px;" /></a>
-                            <a href="#" data-toggle="modal"><img src="images/18-icon.png" style="width:50px;"/></a>
-                            <a href="#" data-toggle="modal"><img src="images/RNG-icon.png" style="width:50px;" /></a>
-                            <a href="#" data-toggle="modal"><img src="images/secure-icon.png" style="width:50px;"/></a>                           
-                        </div>
-                    </div>
+            <div class="d-none d-lg-block col-lg border-end border-secondary footer-block footer-second-block">
+                <div class="fb-page" data-href="https://www.facebook.com/OSOM-RUMMY-GAME-111675877153930/" data-tabs="timeline,events,messages" data-width="290" data-height="210" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OSOM-RUMMY-GAME-111675877153930/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OSOM-RUMMY-GAME-111675877153930/">OSOM RUMMY GAME</a></blockquote></div>
+            </div>
+            <div class="d-block d-lg-none col-12 col-sm-6 col-md-6 col-lg-4 footer-block">
+                <div class="follow">
+                    <h5>Follow Us On :</h5>
+                    <img src="images/social-media.png">
                 </div>
             </div>
-            <div class="linefull"></div>
-    
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <p class="mb-0 foot-listtxt py-2">Copyright &copy; 2020 Rubik Cube Technology India Pvt. Ltd. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>			
+            <div class="col-sm-6 col-md-6 col-lg footer-block footer-last-block">
+                <h5>Get in touch</h5>
+                <p>Tel: 0124-1234567<br><span>Email: </span> cs@osomgame.com</p>
+                <h5>Osom Rummy Game</h5>
+                <p>562-563 B2 Tower, Spaze i-Tech Park Gurgaon, Haryana 122001</p>
+            </div><hr>
+            <div class="col-12 copyright">
+                <p>Copyright &copy; 2020 Rubik Cube Technology India Pvt. Ltd. All rights reserved.</p>
+            </div>
+            
         </div>
-    </footer>
+    </div>
+</section>
+<!-- Footer End -->
+<div class="btnsection d-lg-none" style="height:95px;">
+    <div class="custbtn">Get Rs.100 Free as Joining Bonus</div>
+    <div class="download1" onclick="download()">Download App <i class="fa fa-download" aria-hidden="true"></i>  </div>
+</div>
 </body>
 </html>
