@@ -32,6 +32,15 @@
             window.location.href = "https://unionapi.osomgame.com/download.php?appid=23001"
         }
     </script>
+	
+<script>
+    (setInterval(function(){
+      var random = document.getElementById('random-number');
+      var number = Math.floor((5 + Math.random()) * 10000);
+      random.innerHTML = number;
+    }, 4000))
+    ();
+  </script>
 </head>
 
 
@@ -712,15 +721,6 @@
         });        
     });
 </script>
-
-<script>
-    (setInterval(function(){
-      var random = document.getElementById('random-number');
-      var number = Math.floor((5 + Math.random()) * 10000);
-      random.innerHTML = number;
-    }, 4000))
-    ();
-  </script>
 
 <script>
     AOS.init();
