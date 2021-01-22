@@ -34,17 +34,18 @@
     </script>
 	
 <script>
-    (setInterval(function(){
-      var random = document.getElementById('random-number');
-      var number = Math.floor((5 + Math.random()) * 10000);
-      random.innerHTML = number;
-    }, 4000, true))
-    ();
-  </script>
+    function online(){
+        setInterval(function(){
+        var random = document.getElementById('random-number');
+        var number = Math.floor((5 + Math.random()) * 10000);
+        random.innerHTML = number;
+        }, 4000,)
+    }
+ </script>
 </head>
 
 
-<body>
+<body onload="online()">
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="iGYBU2wl"></script>    
 <section class="banner d-none d-lg-block">
