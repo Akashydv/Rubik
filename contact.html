@@ -33,6 +33,64 @@
             window.location.href = "https://unionapi.osomgame.com/download.php?appid=23001"
         }
     </script>
+    <script>
+        function printError(elemId, hintMsg) {
+        document.getElementById(elemId).innerHTML = hintMsg;
+    }
+    
+    function validateForm() {
+        var name = document.contactForm.username.value;
+        var email = document.contactForm.email.value;
+        var mobile = document.contactForm.mobile.value;
+    
+        var nameErr = emailErr = mobileErr  = true;
+        
+        if(name == "") {
+            printError("nameErr", "*Please enter your name");
+        } else {
+            var regex = /^[a-zA-Z\s]+$/;                
+            if(regex.test(name) === false) {
+                printError("nameErr", "*Please enter a valid name");
+            } else {
+                printError("nameErr", "");
+                nameErr = false;
+            }
+        }
+        
+    
+        if(email == "") {
+            printError("emailErr", "*Please enter your email address");
+        } else {
+            
+            var regex = /^\S+@\S+\.\S+$/;
+            if(regex.test(email) === false) {
+                printError("emailErr", "*Please enter a valid email address");
+            } else{
+                printError("emailErr", "");
+                emailErr = false;
+            }
+        }
+        
+        
+        if(mobile == "") {
+            printError("mobErr", "*Please enter your mobile number");
+        } else {
+            var regex = /^[1-9]\d{9}$/;
+            if(regex.test(mobile) === false) {
+                printError("mobErr", "*Please enter a valid 10 digit mobile number");
+            } else{
+                printError("mobErr", "");
+                mobileErr = false;
+            }
+        }
+        
+        if((nameErr || emailErr || mobileErr ) == true) {
+           return false;
+        }
+        else{}
+    }
+    
+    </script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -121,16 +179,19 @@
             <div class="col-8 col-md-5 col-sm-7 col-lg-5 col-xl-5 mb-3 form">
                 
                 <h1>Contact Form</h1>
-                <form onsubmit="validation()">
+                <form name="contactForm" method="POST">
                     
                     <input type="text" id="form-field" name="username" class="form-control username" placeholder="Name">
+                    <div class="error" id="nameErr"></div>
                     
                     <input type="text" id="form-field" name="email" class="form-control email" placeholder="Email Address">
+                    <div class="error" id="emailErr"></div>
                     
-                    <input type="number" id="form-field" name="mobile" class="form-control mobile" maxlength="10" placeholder="Mobile Number">
-                
+                    <input type="phone" id="form-field" name="mobile" class="form-control mobile" maxlength="10" placeholder="Mobile Number">
+                    <div class="error" id="mobErr"></div>
+
                     <textarea rows="4" id="form-field" name="query" class="form-control query" placeholder="Please Enter Your Feedback/Query" style="margin-bottom: 3vw;"></textarea>    
-                    <input type="submit" class="form-control text-light submit-btn">            
+                    <input type="submit" class="form-control text-light submit-btn" onclick="validateForm()">            
                 </form>
                 
             </div>
@@ -220,5 +281,8 @@
     <div class="custbtn">Get Rs.100 Free as Joining Bonus</div>
     <div class="download1" onclick="download()">Download App <i class="fa fa-download" aria-hidden="true"></i>  </div>
 </div>
+
+
+
 </body>
 </html>
